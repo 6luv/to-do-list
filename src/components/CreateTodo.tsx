@@ -37,7 +37,11 @@ const CreateTodo: FC<CreateTodoProps> = ({ todos, setTodos }) => {
       justifyContent="center"
       alignItems="center"
     >
-      <Input value={content} onChange={(e) => setContent(e.target.value)} />
+      <Input
+        maxW={250}
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
+      />
       <Button ml={2} colorScheme="blue" onClick={onClickCreateTodo}>
         만들기
       </Button>
